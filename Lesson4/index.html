@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>React tutorial</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.2/browser.min.js"></script>
+  </head>
+  <body>
+    <script type="text/babel">
+
+    //  //global scope
+    //   var a = 10;
+    //   function logA(){
+    //     console.log('in',a);
+    //   }
+    //   logA();
+    //   console.log('out',a);
+     //
+    //   //function scope
+    //   function logB(){
+    //     var b = 100;
+    //     console.log('in',b);
+    //   }
+    //   logB();
+    //   console.log('out',b); // b is undefined
+
+      // JavaScript has no block scope
+      // var c = undefined;
+      // if(true){
+      //   var c = 100;
+      //   console.log('in Block++',c);
+      // }
+      // console.log('Out Block',c);
+
+      //let - Provides a scope in block !
+      let d = 10;
+      if(true){
+        let d = 100;
+        console.log('in Block',d);
+      }
+      console.log('Out Block',d);
+
+
+    </script>
+  </body>
+</html>
